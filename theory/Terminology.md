@@ -49,3 +49,15 @@
             - Login.html
             - search.html
             - home.html
+8. 
+    - Tag
+    - Element
+    - Attribute
+
+9. Resources: 
+    a. Websites for html related docs: 
+        - MDN Web docs
+        - W3 school
+    b. Course from: CodeHelp - by Babbar
+        https://www.youtube.com/watch?v=k7ELO356Npo&t=3s
+    c. 

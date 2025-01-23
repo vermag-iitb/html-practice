@@ -1,13 +1,14 @@
 # Tags
-1. it is a keyword with <>
-2. it instructs browser and hence also identified as a pre-defined program (or function)
-3. Tags have attributes to add some effects
-4. Types: 
+1. it is a markup entity to provide contenr (e.g., video, audio, etc.) struture, semantics and formatting.
+2. it is a keyword with <>
+3. it instructs browser and hence also identified as a pre-defined program (or function)
+4. Tags have attributes to add some effects
+5. Types: 
 - paired: <>...</>
 - unpaired (or bodyless tags): <---/> 
     * E.g.: <br/>, <img.../>, <link.../>
 
-#### <!Doctype HTML>
+#### <!Doctype HTML> - Boiler plate code
 * defines version section for HTML5 and above
 * stands for documentation type
 * doctype = DOCTYPE (recommended)
@@ -20,6 +21,7 @@
 * W3Cs guidelines are suggestions and not restrictions and hence, we can skip any part of it.
 
 
+## Structure tags
 
 #### <html>...<!html>
 * Note: 
@@ -31,24 +33,53 @@
 #### <head>...<!head>
 * Note: 
     * this executes first
-    *
+    * it stores metadata (<meta> 
+        defining website which appears as description on google), seo data, and website title (<title>) data
+
+##### <meta attr = "" attr = "" .../>
+    * attribute: name, content, property, http-equiv, charset
+    * E.g.: name = title, description, keywords, author, copyright, robots
+    * E.g.: name="viewport" content="width=device-width, initial-scale=1.0"
+    * E.g.: property = og:type, og:url
+    * E.g.: charset="UTF-8"
+    * E.g.: http-equiv="X-UA-Compatible" content="IE=edge"
 
 
 #### <body>...<!body>
 * Note: 
-    * it consists of designing code and it gets executed after <head> tag.
+    * it gets executed after <head> tag
+    * it consists of design code with individual elements of the webpage as separate labels
 
-
-
-
-#### <form>...</form>
-
-#### Paragraph tag
-* <p>...</p>
 
 #### <title>...</title>
 * defined for each web-page
 * generally used inside <head>...</head>
+
+
+#### <header>...</header>
+
+
+#### <footer>...</footer>
+
+
+#### <main>...</main>
+
+
+#### <aside>...</aside>
+
+
+#### <section>...</section>
+
+
+#### <nav>...</nav>
+
+
+
+## Semantic tags
+
+#### Paragraph tag
+* <p>...</p>
+
 
 #### <link>...</link>
 * used to set icons, hyperlinks, logos, etc.
@@ -57,6 +88,7 @@
 * supported images - .jpg, .bmp, .png, .gif, .tif, .ico (photoshop)
 * preferrable image size - 18px18px, 20x20px
 * logo comes to all webpages by default
+
 
 #### <a>...</a>
 * called anchor tag as it anchors to a particular destination
@@ -73,6 +105,7 @@
 * Note: if the file doesn't open, then browser forces to download by default
 * Note: <a href = "#element_id">text</a> -> to navigate on same page using links for headings
 
+
 #### Heading tag
 * <h1>...</h1>
 * <h2>...</h2>
@@ -80,6 +113,10 @@
 * <h4>...</h4>
 * <h5>...</h5>
 * <h6>...</h6>
+Note: 
+1. Difference between different headings is not about size and appearance. However, difference lies in semantics (i.e., priority is more for H1 than H2). Also, the appearance can be changed as needed later for H1 to H6.
+2. <h7> or anything similar will behave like normal text in <p> tag. 
+
 
 #### <img>...</img>
 * used to display image on webpages
@@ -94,17 +131,6 @@
     - title - info. displayed when mouse pointer hovers on the image
     - alt - alternative text, this text appears in place of image if it doesn't load
 
-#### <button>...</button>
-
-#### <label>...</label>
-
-#### <span>...</span>
-
-#### <table>...</table>
-
-#### <audio>...</audio>
-
-#### <video>...</video>
 
 #### List tags
     * ol - ordered list (it is block level tag and paired tag)
@@ -139,9 +165,50 @@
         - supported for dot, circle, square, etc.
         - syntax is similar to 'ol'
         - attribute: type="dot"
+    
+* Note: Difference between ordered and unordered list is about the importance to their sequence, and not the bullets they appear with.
+
+
+#### Table tags
+* Syntax: 
+    <table>
+        <tr> 
+    </table>
+* <table> tag itself is not responsible to generate a table. It is to confine rows and column tags and attributes.
+* <tr> tag - to draw one row (table row)
+* <th> tag - to draw one column
+* <td> tag - to give cell data (called table data)
+* <thead> tag - to define table header section
+* <tfoot> tag - to define table footer section
+* <tbody> tag - to define table body section
+Note: <thead>, <tfoot>, and <tbody> - only used when we want to implement a style to a group of rows
+
+
+#### <form>...</form>
+
+
+#### <input>...</input>
+
+
+
+## Formatting tag
+Note: Formatting tags are generally not used, as CSS is used for styling the content.
+* <strong> - bold text (<b> - bold tag - deprecated)
+* <u> - underline
+* <i> - italics (deprecated)
+* <em> - italics (15%) - emphasize
+* <s> - strikeout
+* <sub> - subscript
+* <super> - superscript
+* <pre> - Instead of writing <br/> tag everywhere, we can directly use <pre> tag, which picks text in form as presented in html file.
+* <code> - 
+
+
+## Other tags
 
 #### <legend> text </legend>
 * to define name and heading for a box or its sub-parts
+
 
 #### Fieldset tag
     * Used to draw line/border around multiple elements or block of tag
@@ -164,32 +231,27 @@
             </ol>
         </fieldset>
 
-#### Table tags
-* Syntax: 
-    <table>
-        <tr> 
-    </table>
-* <table> tag itself is not responsible to generate a table. It is to confine rows and column tags and attributes.
-* <tr> tag - to draw one row
-* <th> tag - to draw one column
-* <td> tag - to give cell data
-* <thead> tag - to define table header section
-* <tfoot> tag - to define table footer section
-* <tbody> tag - to define table body section
-Note: <thead>, <tfoot>, and <tbody> - only used when we want to implement a style to a group of rows
 
-#### Formatting tag
-* <strong> - bold text
-* <u> - underline
-* <i> - italics (deprecated)
-* <em> - italics (15%)
-* <strike> - strikeout
-* <sub> - subscript
-* <super> - superscript
+#### <button>...</button>
+
+#### <label>...</label>
+
+#### <span>...</span>
+
+#### <table>...</table>
+
+#### <audio>...</audio>
+
+#### <video>...</video>
+
+#### <section>...</section>
+
+
+
 
 ## Other useful:
 1. <!--comment-->
-2. <br> - line break
+2. <br> or </br> - line break
 3. Entities - used to print operators icon webpage 
     - &entity; - 100 entities written in english
     - &#operator; - 300 operators, written in hexadecimal no. of symbols
@@ -211,3 +273,10 @@ Note: <thead>, <tfoot>, and <tbody> - only used when we want to implement a styl
         4. Optional attributes: 
             - introduced in html5
             - E.g.: lang, type, etc.
+
+# ShortHands in VS-Code
+1. Boiler plate code - !+TAB/ENTER
+2. Run in browser via Live Server - 
+    - 'Go Live' button in right corner
+    - Rt. Click + Open with Live Server
+3. 
