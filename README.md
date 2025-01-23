@@ -11,6 +11,7 @@ HTML practice
 
 ### Extensions in VS-Code
 * Prettier: 
-* Live-server: 
+* Live-server: button to run code in browser in live format
+* Emmet: to generate code using short-hands (https://emmet.io/)
 
 

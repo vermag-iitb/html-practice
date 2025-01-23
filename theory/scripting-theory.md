@@ -19,6 +19,7 @@
     Here, strict.dtd - is a file which contains what tags are present in HTML4.0 and their definition.
     Same urls are used for below versions as well with version corrected to 3,2, or 1
 * W3Cs guidelines are suggestions and not restrictions and hence, we can skip any part of it.
+* Shorthand: !+tab
 
 
 ## Structure tags
@@ -63,6 +64,9 @@
 
 
 #### <main>...</main>
+
+
+#### <article>...</article>
 
 
 #### <aside>...</aside>
@@ -206,9 +210,9 @@ Note: Formatting tags are generally not used, as CSS is used for styling the con
 
 ## Other tags
 
+
 #### <legend> text </legend>
 * to define name and heading for a box or its sub-parts
-
 
 #### Fieldset tag
     * Used to draw line/border around multiple elements or block of tag
@@ -231,6 +235,22 @@ Note: Formatting tags are generally not used, as CSS is used for styling the con
             </ol>
         </fieldset>
 
+#### class tag
+    to help combine elements in html script to be able to apply editing together
+
+##### id attribute:
+    to identify every element in html script as individual
+
+#### div tag
+* non-semantic tag (i.e., doesn't provide any meaning to the script)
+* stands for 'division tag'
+* used for creating divisions and used as a wrapping container
+* now the wrap can be used to define properties on the contents together
+* it is a block element and takes up complete line space
+
+#### span tag
+* this is inline tag and takes space as needed and starts from same line
+* 
 
 #### <button>...</button>
 
@@ -249,7 +269,7 @@ Note: Formatting tags are generally not used, as CSS is used for styling the con
 
 
 
-## Other useful:
+## Other useful content:
 1. <!--comment-->
 2. <br> or </br> - line break
 3. Entities - used to print operators icon webpage 
@@ -273,6 +293,16 @@ Note: Formatting tags are generally not used, as CSS is used for styling the con
         4. Optional attributes: 
             - introduced in html5
             - E.g.: lang, type, etc.
+5. Elements:
+    * Block elements
+        - always get created in next line
+        - take all the horizontal space on the webpage
+        - can be converted to inline by using style attr with property: "display: inline"
+
+    * Inline elements
+        - don't come in next line
+        - take space as required by the content
+
 
 # ShortHands in VS-Code
 1. Boiler plate code - !+TAB/ENTER
