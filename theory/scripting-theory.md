@@ -40,7 +40,7 @@
 ##### <meta attr = "" attr = "" .../>
     * attribute: name, content, property, http-equiv, charset
     * E.g.: name = title, description, keywords, author, copyright, robots
-    * E.g.: name="viewport" content="width=device-width, initial-scale=1.0"
+    * E.g.: name="viewport", content="width=device-width, initial-scale=1.0"
     * E.g.: property = og:type, og:url
     * E.g.: charset="UTF-8"
     * E.g.: http-equiv="X-UA-Compatible" content="IE=edge"
@@ -180,18 +180,95 @@ Note:
     </table>
 * <table> tag itself is not responsible to generate a table. It is to confine rows and column tags and attributes.
 * <tr> tag - to draw one row (table row)
-* <th> tag - to draw one column
-* <td> tag - to give cell data (called table data)
-* <thead> tag - to define table header section
-* <tfoot> tag - to define table footer section
-* <tbody> tag - to define table body section
+* <th> tag - this tag is used to create a heading inside the <thead> tag
+* <td> tag
+    - to give cell data (called table data)
+    - Property: 
+        - rowspan: to expand a cell into multiple rows
+        - colspan: to expand a cell into mulitple cols
+* <thead> tag
+    - to define table header section
+    - in general, defined for first row of the table
+* <tfoot> tag
+    - to define table footer section
+    - in general, this row will have summary we define the table (like sum)
+
+* <tbody> tag
+    - to define table body section
+    - in general, all the content except header tag goes to this tag
+
 Note: <thead>, <tfoot>, and <tbody> - only used when we want to implement a style to a group of rows
 
 
 #### <form>...</form>
+* Purpose: to collect user input as data
+* it uses following tags:
+    ##### <input>...</input>
+    * attributes: 
+        - 'value': text that appears on the input field (e.g., text on the button). 'value' attribute in text fields represent default value of the input. It is not the faded example we see in text bars.
+        - 'type' : it defines type of input (like, button, checkbox, radiobutton, etc.)
+        - 'placeholder' - example text in the text field for the user understanding
+    * input can be taken in following forms:
+        - text: text-box
+        - button
+        - checkbox
+        - color: color selector
+        - radio: radio-button
+            - 'name' attribute connects all radio-buttons together so that only one out of them can be selected
+            - 'id' attribute helps to connect to 'label'
+        - date: date-picker
+        - datetime-local
+        - Specific fields:
+            - email
+            - password
+            - month
+            - time
+            - week
+            - number: generally used for counter
+            - range
+        - submit:
+            - there are two ways to send the data collected in form to server:
+                1. submit button
+                2. <form action=""> - 'action' attribute in form button
+        - reset
+        - file: file-selector (from local system, etc.)
+        - image: image as buttons
+        - hidden: ?
+        - search
+        - tel: telephone
+        - url
+        
+        
+    ##### <label>...</label>
+    * used to create labels
+    * used by screen readers
+    * attributes: 
+        - 'for': its value is same as value if 'id' attribute of <input>. This links these two tags.
+    
+    ##### <select>...</select>
+    * used to insert a drop down menu for the user to select
+    * <option value="item1">item to display</option> tag is used to create options of the drop-down menu
+    * The options should be enclosed inside the <select> tag.
+    * Attribute - 'multiple' enables to select multiple options from the drop-down
+    
+    ##### <button>...</button>
+    
+    <textArea>
+    * used to take multiple line input from user
+    * Attributes: 
+        - id
+        - cols: to define width of the textarea
+        - rows: to define length of the textarea
+        - placeholder
+    
+    <fieldset>
+    * used to combine section of related items inside a box (appears on UI)
+    * E.g.: following radiobuttons are related and can be combined into a fieldset:
+        male
+        female
+        other
+    * <legend>: to provide captions to a fieldset (appears as a description to the fieldset on UI)
 
-
-#### <input>...</input>
 
 
 

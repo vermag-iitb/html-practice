@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <table border="4">
+            <!-- Defining all input tag attributes -->
+            <tr>
+                <!-- Text field -->
+                <td><label for="name">Enter name: </label></td>
+                <td><input type="text" id="user" value="e.g., gaurav"></td> 
+            </tr>
+            <tr>
+                <!-- Email field -->
+                <td><label for="email">Enter Email id: </label></td>
+                <td><input type="email" id="email-1" placeholder="e.g., abc@def.com"></td>
+            </tr>
+            <tr>
+                <!-- password field -->
+                <td><label for="pwd">Enter password: </label></td>
+                <td><input type="password" id="pwd" placeholder="e.g., pwd@123"></td>
+            </tr>
+            <tr>
+                <!-- submit button -->
+                <td></td>
+                <td style="text-align: center;"><input type="submit" id="button1" value="Submit"></td>
+            </tr>
+            <tr>
+                <!-- date field -->
+                <td><label for="datepicker">Enter D.O.B: </label></td>
+                <td><input type="date" id="datepicker"></td>
+            </tr>
+            <tr>
+                <!-- Radio-buttons -->
+                <td><label for="gender">Select gender</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender">
+                    <label for="female">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <!-- Checkboxes -->
+                <td><label for="">Select genre:</label></td>
+                <td>
+                    <input type="checkbox" id="horror">
+                    <label for="horror">Horror</label><br/>
+                    <input type="checkbox" id="comedy" name="genre">
+                    <label for="horror">Comedy</label><br/>
+                    <input type="checkbox" id="action" name="genre">
+                    <label for="horror">Action</label><br/>
+                    <input type="checkbox" id="suspense" name="genre">
+                    <label for="horror">Suspense</label><br/>
+                </td>
+            </tr>
+            <tr>
+                <!-- file-selector -->
+                <td><label for="">Image button</td>
+                <td><input type="file" name="" id="file1"></td>
+            </tr>
+            <tr>
+                <!-- image-button -->
+                <td><label for="imageButton">Upload</td>
+                <td><input type="image" alt="Click Me" id="imageButton" src="resources\image-icon.png" width="40" height="40"></td>
+            </tr>
+            <tr>
+                <!-- telephone-button -->
+                <td><label for="telephone">Telephone:</td>
+                <td><input type="tel" id="telephone"></td>
+            </tr>
+            <tr>
+                <!-- number-counter -->
+                <td><label for="counter">Job Experience:</td>
+                <td><input type="number" id="counter" min="0" max="50"></td>
+            </tr>
+
+
+            <!-- Other related tags -->
+            <!-- ================== -->
+            <tr>
+                <!-- selector tag -->
+                <td><label for="selector1">Select a dish:</label></td>
+                <td>
+                    <select name="dishes" id="selector1">
+                        <option value="oats">Oats</option>
+                        <option value="tea">Assam Tea</option>
+                        <option value="coffee">Filter Coffee</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <!-- Button tag -->
+                <td><label for="button1"></label></td>
+                <td><button id="button1">Another button</button></td>
+            </tr>
+            <tr>
+                <!-- textarea tag -->
+                <td><label for="descrition">Describe you:</label></td>
+                <td><textarea id="description" cols="50" rows="10" 
+                    placeholder="only 100 lines of alphanumeric (width of the table came due to me)"></textarea></td>
+            </tr>
+        </table>
+    </form>
+ 
+    
+    <br/>
+    <br/>
+
+    <fieldset>
+    <legend>Desciption box in Fieldset tag</legend>
+    <label for="desc2">Describe you:</label>
+    <textarea id="desc2" cols="80" rows="10" 
+        placeholder="only 100 lines of alphanumeric"></textarea>
+    
+    <br/>
+    <br/>
+
+    <label for="options">Choose multiple options:</label>
+    <select id="options" name="options[]" multiple>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+        <option value="option4">Option 4</option>
+    </select>
+
+    </fieldset>
+
+
+</body>
+</html>
