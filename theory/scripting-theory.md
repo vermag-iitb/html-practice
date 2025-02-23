@@ -226,6 +226,9 @@ Note: <thead>, <tfoot>, and <tbody> - only used when we want to implement a styl
             - week
             - number: generally used for counter
             - range
+            - url
+            - tel: telephone
+            - search
         - submit:
             - there are two ways to send the data collected in form to server:
                 1. submit button
@@ -234,10 +237,6 @@ Note: <thead>, <tfoot>, and <tbody> - only used when we want to implement a styl
         - file: file-selector (from local system, etc.)
         - image: image as buttons
         - hidden: ?
-        - search
-        - tel: telephone
-        - url
-        
         
     ##### <label>...</label>
     * used to create labels
@@ -260,15 +259,6 @@ Note: <thead>, <tfoot>, and <tbody> - only used when we want to implement a styl
         - cols: to define width of the textarea
         - rows: to define length of the textarea
         - placeholder
-    
-    <fieldset>
-    * used to combine section of related items inside a box (appears on UI)
-    * E.g.: following radiobuttons are related and can be combined into a fieldset:
-        male
-        female
-        other
-    * <legend>: to provide captions to a fieldset (appears as a description to the fieldset on UI)
-
 
 
 
@@ -295,6 +285,13 @@ Note: Formatting tags are generally not used, as CSS is used for styling the con
     * Used to draw line/border around multiple elements or block of tag
     * any number of borders can be drawn
     * Paired and block level tag
+    * used to combine section of related items inside a box (appears on UI)
+    * E.g.: following radiobuttons are related and can be combined into a fieldset:
+        male
+        female
+        other
+    * <legend>: to provide captions to a fieldset (appears as a description to the fieldset on UI)
+
     * Syntax: 
         <fieldset attr>
             <legend> text </legend>
@@ -318,31 +315,13 @@ Note: Formatting tags are generally not used, as CSS is used for styling the con
 ##### id attribute:
     to identify every element in html script as individual
 
-#### div tag
-* non-semantic tag (i.e., doesn't provide any meaning to the script)
-* stands for 'division tag'
-* used for creating divisions and used as a wrapping container
-* now the wrap can be used to define properties on the contents together
-* it is a block element and takes up complete line space
-
 #### span tag
 * this is inline tag and takes space as needed and starts from same line
 * 
 
-#### <button>...</button>
-
-#### <label>...</label>
-
-#### <span>...</span>
-
-#### <table>...</table>
-
 #### <audio>...</audio>
 
 #### <video>...</video>
-
-#### <section>...</section>
-
 
 
 
@@ -370,7 +349,13 @@ Note: Formatting tags are generally not used, as CSS is used for styling the con
         4. Optional attributes: 
             - introduced in html5
             - E.g.: lang, type, etc.
-5. Elements:
+5. div tag
+    - non-semantic tag (i.e., doesn't provide any meaning to the script)
+    - stands for 'division tag'
+    - used for creating divisions and used as a wrapping container
+    - now the wrap can be used to define properties on the contents together
+    - it is a block element and takes up complete line space
+6. Elements:
     * Block elements
         - always get created in next line
         - take all the horizontal space on the webpage
