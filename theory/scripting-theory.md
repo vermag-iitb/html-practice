@@ -261,6 +261,14 @@ Note: <thead>, <tfoot>, and <tbody> - only used when we want to implement a styl
         - placeholder
 
 
+#### <details>...</details>
+    * Purpose: To create collapsible section of content that can be toggled by the user
+    * Syntax: 
+    <details>
+        <summary>Click to view more details</summary>
+        <p><!-- This is additional content that is hidden initially and can be revealed by clicking the summary above --></p>
+    </details>
+
 
 ## Formatting tag
 Note: Formatting tags are generally not used, as CSS is used for styling the content.
