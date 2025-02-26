@@ -70,13 +70,14 @@
 
 
 #### <aside>...</aside>
+    Purpose: Used for adding side bars
 
 
 #### <section>...</section>
 
 
 #### <nav>...</nav>
-
+    Purpose: Used for navigation links
 
 
 ## Semantic tags
@@ -317,6 +318,7 @@ Note: <thead>, <tfoot>, and <tbody> - only used when we want to implement a styl
     E.g.: 
     - May not work src="https://www.youtube.com/watch?v=k7ELO356Npo&t=17828s"
     - Will work when = "https://www.youtube.com/embed/k7ELO356Npo&t=17828s"
+    - Adding autoplay for any video (project3) = "https://www.youtube.com/embed/k7ELO356Npo?autoplay=1&mute=1"
 
 ## Formatting tag
 Note: Formatting tags are generally not used, as CSS is used for styling the content.
