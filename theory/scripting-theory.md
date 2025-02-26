@@ -134,6 +134,7 @@ Note:
     - height 
     - title - info. displayed when mouse pointer hovers on the image
     - alt - alternative text, this text appears in place of image if it doesn't load
+    - loading - "lazy", to defer the loading of an image (or other media content) until it is actually needed on the page.  This can improve page load performance by reducing the initial amount of data that needs to be loaded when the page is first accessed.
 
 
 #### List tags
@@ -269,6 +270,53 @@ Note: <thead>, <tfoot>, and <tbody> - only used when we want to implement a styl
         <p><!-- This is additional content that is hidden initially and can be revealed by clicking the summary above --></p>
     </details>
 
+
+#### <audio>...</audio>
+    * Purpose: To add audio on the webpage
+    * Refer: project1.html
+    * Syntax:
+        <audio controls>
+            <source src="<location-of-audio-in-project>" type="audio/ogg">
+            name-of-the-file
+        </audio>
+    * Attributes: 
+        - controls: to have controls on the screen
+        - <source> tag: separate tag included to add src of the file.
+        Note: we can directly add 'src' attribute to the <video> to define file location
+
+
+#### <video>...</video>
+    * Purpose: To add video on the webpage
+    * Refer: project1.html
+    * Syntax: 
+        <video width="320" height="240" controls>
+            <source src="<location-of-audio-in-project>" type="video/mp4">
+            name-of-the-file
+        </video>
+    * Attributes: 
+        - controls: to have controls on the screen
+        - <source> tag: separate tag included to add src of the file.
+        Note: we can directly add 'src' attribute to the <video> to define file location
+
+#### <iframe>...</iframe>
+    * Purpose: It is 'inline frame' tag, used for adding maps, code rendering sandbox, youtube-videos, other webpages, etc.
+    * Refer: project1.html
+    * Syntax: 
+        <iframe
+            id="inlineFrameExample"
+            title="Inline Frame Example"
+            width="300"
+            height="200"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&amp;layer=mapnik">
+
+        </iframe>
+    * Attributes: 
+        - src="<exact link of the item to render on your webpage>"
+    * Notes: 
+    Rendering youtube videos in iframe has a format
+    E.g.: 
+    - May not work src="https://www.youtube.com/watch?v=k7ELO356Npo&t=17828s"
+    - Will work when = "https://www.youtube.com/embed/k7ELO356Npo&t=17828s"
 
 ## Formatting tag
 Note: Formatting tags are generally not used, as CSS is used for styling the content.
