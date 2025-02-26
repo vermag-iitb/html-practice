@@ -36,14 +36,46 @@
     * this executes first
     * it stores metadata (<meta> 
         defining website which appears as description on google), seo data, and website title (<title>) data
+    * Favicon: 
+        - Icon for the title bar of the web-page.
+        - It is added under the <head> tag.
+        - The icon needs to be under root directory (not any other directory).
+        - Shorthand: link:favicon + enter
+        - Syntax: <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    * CSS-stylesheet:
+        - css style sheets can be added to HTML file under <head> tag using <link> tag
+        - It is added under the <head> tag.
+        - The css stylesheet needs to be under root directory (not any other directory).
+        - Shorthand: link:css + enter
+        - Syntax: <link rel="stylesheet" href="style.css">
+    * JS linking: 
+        - JS scripts are added using <script> tag.
+        - Syntax: <script src="script.js"></script>
+        - Shorthand: script:src + enter
+        - E.g.: To add alert popup coming from top on browser
+            document.addEventListener("DOMContentLoaded", function(){
+                alert("Hello from JS Script")
+            })
+    * SEO - Search engine optimize
+        - this concept helps to get our website listed amongst the top on browser
+        - this is contributed by variety of items of webpage, like:
+            * meta tags
 
 ##### <meta attr = "" attr = "" .../>
     * attribute: name, content, property, http-equiv, charset
     * E.g.: name = title, description, keywords, author, copyright, robots
     * E.g.: name="viewport", content="width=device-width, initial-scale=1.0"
+        - display on the browser is called view-port.
+        - here, we are defining zoom level and width of the page
+    * E.g.: name="description", content="This website is for so and so purpose."
     * E.g.: property = og:type, og:url
     * E.g.: charset="UTF-8"
+        - most popular character encoding for multiple language
+        - others can be like ASCII, etc.
     * E.g.: http-equiv="X-UA-Compatible" content="IE=edge"
+        - This helps in maintaining uniformity while webpage rendering. It mentions to use latest IE version for rendering.
+        - IE: internet explorer
+
 
 
 #### <body>...<!body>
